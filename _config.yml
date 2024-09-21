@@ -1,0 +1,16 @@
+basic_settings:
+  QQbot_admin_account: "1732373074" # 设置QQbot管理员账号
+  QQbot_account: "2712065523" # 设置QQbot账号
+
+bot_api_settings: #QQ基本功能的设置
+  answer_enable: True # 是否开启自动回复
+  random_answer:
+    enable: True # 是否开启随机回复
+    random_num: 50 # 生成随机数(1-100)，当低于random_num时，使用回复消息
+
+bot_other_api_settings: #QQ其他功能的设置
+  weather_api_key:
+    enable: True # 是否开启天气查询功能
+
+test_settings:
+  test_enable: False # 是否开启测试模式

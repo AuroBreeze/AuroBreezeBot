@@ -1,0 +1,6 @@
+requests
+colorlog
+websockets
+lxml
+aiohttp
+pyyaml
