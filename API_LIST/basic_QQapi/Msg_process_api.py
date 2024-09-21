@@ -88,8 +88,9 @@ class Msg_process:
             self.Logger.warning(f"测试模式开启，原始消息内容为{data}")
             self.Logger.warning(f"解析后的消息内容为{message_data}" if "message_data" in locals() else "")
         else:
+
             self.Logger.info(
-                f"消息类型:{data['post_type']}，消息内容:{message_content}，消息发送者:{message_name}，消息ID:{message_id}，消息发送者ID:{message_sender_id}，消息群组ID:{message_group},是否@:{judgement_at},是否@其他人:{judgement_at_other}" if "message_content" in locals() else "")
+                f"消息类型:{data['post_type']}，消息内容:{message_content}，消息发送者:{message_name}，消息ID:{message_id}，消息发送者ID:{message_sender_id}，消息群组ID:{message_group},是否@:{judgement_at},是否@其他人:{judgement_at_other}" if "message_data" in locals() else "")
 
 
 
