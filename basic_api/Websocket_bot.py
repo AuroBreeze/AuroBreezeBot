@@ -23,8 +23,8 @@ class Websocket_receiver:
                     #self.logger.info("Message Received: %s" % message)
                     await Raw_data.put(message)  # 将接收到的数据,放入原始队列
 
-
-                    Msg_processor_task = asyncio.create_task(Msg_dispatcher().dispatch())
+                    # 开启消息处理任务
+                    Msg_processor_task = asyncio.create_task(Msg_dispatcher().dispatch_task_main())
 
 
         except Exception as e:
