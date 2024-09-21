@@ -9,18 +9,26 @@ class Logger:
                              datefmt='%Y-%m-%d %H:%M:%S', reset=True)  # 设置日志输出级别
 
     def info(self, message):
+        if message is "":
+            return
         # 输出INFO级别的日志
         self.logger.info(message)
 
     def debug(self, message):
+        if message is "":
+            return
         # 输出DEBUG级别的日志
         self.logger.debug(message)
 
     def error(self, message):
+        if message is "":
+            return
         # 输出ERROR级别的日志
         self.logger.error(message)
 
     def warning(self, message):
+        if message is "":
+            return
         # 输出WARNING级别的日志
         self.logger.warning(message)
 
